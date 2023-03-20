@@ -1,0 +1,656 @@
+/*----------------------------------------
+    Genral default CSS
+----------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --light: rgb(222, 227, 228);
+  --green: #21c491;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 20px 0px;
+}
+
+/*--------------------------------------
+   01. header-area css hear
+---------------------------------------*/
+
+header {
+  background-image: url(img/intro-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-content {
+  text-align: center;
+  color: #fff;
+}
+
+.header-content p {
+  font-size: 28px;
+}
+
+.header-p {
+  color: var(--light);
+  font-size: 21px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fa-chevron-down {
+  color: #fff;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  animation: arrow 1.5s infinite;
+}
+
+@keyframes arrow {
+  from {
+    bottom: 15%;
+    opacity: 1;
+  }
+  to {
+    bottom: 10%;
+    opacity: 0.5;
+  }
+}
+
+.fa-chevron-down:hover {
+  color: #fff;
+}
+
+/* logo */
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  padding: 30px 20px;
+  background-color: #111;
+  height: 70px;
+}
+
+.logo {
+  width: 30%;
+}
+
+.links ul {
+  display: flex;
+}
+.links ul li a:hover {
+  color: #21c491;
+}
+
+.links li {
+  padding: 0px 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav li:first-child a {
+  color: var(--green);
+}
+
+/*--------------------------------------
+   02. about-area css hear
+---------------------------------------*/
+
+#about {
+  padding: 50px 0px;
+  background-color: #ffff;
+}
+
+#about .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #20c997;
+  left: 0;
+  right: 0;
+  bottom: 43;
+  margin: auto;
+}
+
+.about-info {
+  width: 65%;
+}
+
+.about-personal-data {
+  width: 30%;
+}
+
+#about p {
+  line-height: 28px;
+  color: rgb(76, 77, 77);
+  padding: 20px 0px;
+}
+
+#about h4 {
+  color: rgb(37, 43, 51);
+  font-size: 28px;
+}
+
+#about h4 span {
+  color: var(--green);
+}
+
+#about .about-personal-data {
+  color: rgb(76, 77, 77);
+}
+
+.about-personal-data li {
+  border-bottom: 1px solid var(--light);
+  margin-top: 30px;
+}
+.clor {
+  color: #1baa80;
+  cursor: pointer;
+}
+.clor:hover {
+  color: #20c997;
+}
+
+.about-personal-data li span {
+  font-weight: 600;
+  color: #111;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 2px solid #20c997;
+  color: #fff;
+  margin: 30px 0px;
+  transition: background-color 1s, color 1s;
+  box-shadow: rgba(0, 0, 0, 30%);
+}
+.btn:hover {
+  background-color: #1baa80;
+  border-color: #1baa80;
+}
+
+.about-personal-data .btn2 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #20c997;
+  border: 2px solid #20c997;
+  color: #fff;
+  margin: 30px 0px;
+  transition: background-color 1s, color 1s;
+  box-shadow: rgba(0, 0, 0, 30%);
+}
+.about-personal-data .btn2:hover {
+  background-color: #1baa80;
+  border-color: #20c997;
+}
+
+.title h2 {
+  font-size: 7rem;
+  color: rgb(222, 227, 228);
+  opacity: 0.4;
+  letter-spacing: 5px;
+}
+
+.title h3 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  position: relative;
+}
+
+.number {
+  flex-direction: column;
+  width: 25%;
+  /* font-size: 3rem; */
+  color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  border-right: 1px dotted var(--light);
+  font-size: 1.25rem;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.number p {
+  font-size: 16px;
+}
+
+.number:last-child {
+  border: none;
+}
+/*--------------------------------------
+   03. services-area css hear
+---------------------------------------*/
+.services {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.flex-items i {
+  width: 70px;
+  height: 70px;
+  color: #20c997;
+  font-size: 30px;
+  padding: 21px;
+  background-color: #fffefe;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+.flex-items {
+  width: 45%;
+  padding: 20px 50px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+/*--------------------------------------
+   04. summary-area css hear
+---------------------------------------*/
+.summary {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.card {
+  border: 2px solid #e2e6e9;
+  border-radius: 5px;
+  width: 42%;
+  height: 200px;
+  margin: 15px 20px;
+}
+
+.par .year {
+  width: 22%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #20c997;
+}
+.par h3 {
+  font-size: 1.1rem;
+}
+.text-danger {
+  margin-bottom: 10px;
+  color: #dc3545;
+}
+/* skills */
+.parent {
+  width: 100%;
+}
+.card-3 {
+  width: 45%;
+  height: 40px;
+  border-style: none;
+}
+.skill {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.big-line {
+  margin: 10px 0;
+  width: 100%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+.small-line {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 65%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.small-line-1 {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 70%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.small-line-2 {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 95%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.small-line-3 {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 60%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.small-line-4 {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 80%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.small-line-5 {
+  background-color: #20c997;
+  margin: 10px 0;
+  width: 99%;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.text-center {
+  margin: 70px;
+  text-align: center;
+}
+.text-center a {
+  border: 2px solid #6c757d;
+  border-radius: 50px;
+  padding: 0.8rem 2.6rem;
+  color: #6c757d;
+}
+.text-center a:hover {
+  background-color: #6c757d;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+/*--------------------------------------
+   05. portfolio-area css hear
+---------------------------------------*/
+
+#gallery {
+  padding: 50px 0px;
+  background-color: #f8f9fa;
+}
+.btn-1 button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 3px 12px;
+  margin-bottom: 30px;
+}
+.btn-1 {
+  text-align: center;
+  
+}
+.btn-1 button{
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  transition: filter 1s, transform 1s;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: start;
+}
+
+#gallery .container {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.gallery-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: larger;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+figure:hover .gallery-layout {
+  opacity: 1;
+}
+
+figure:hover img {
+  filter: blur(1px);
+  transform: scale(1.5);
+}
+/*--------------------------------------
+   06. portfolio-area css hear
+---------------------------------------*/
+.Testimonial {
+  padding: 70px 0;
+}
+.card-5 {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 20px;
+  width: 40%;
+  height: 250px;
+}
+.coulm i {
+  color: #ffc107;
+  background-color: transparent;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+  margin: 10px 0;
+  width: 3%;
+}
+.photo-img {
+  display: flex;
+  width: 100%;
+  height: 150px;
+}
+.photo-img img {
+  width: 25%;
+  border-radius: 50%;
+  height: 80px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 10px;
+}
+.name span {
+  color: #6c757d;
+}
+.coulm {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/*--------------------------------------
+   08. Contact-area css hear
+---------------------------------------*/
+.contact {
+  background-color: #f8f9fa;
+}
+.address h3,
+.address p {
+  padding: 7px 0;
+}
+.card-8 p i {
+  color: green;
+  background-color: transparent;
+  font-size: 25px;
+  margin: 0;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: row;
+}
+.card-8 {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.direction {
+  justify-content: center;
+}
+.card-9 {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 0.81rem 0.96rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.btn-4 {
+  margin-left: 40%;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 2px solid #20c997;
+  background-color: #20c997;
+  transition: background-color 1s, color 1s;
+  box-shadow: rgba(0, 0, 0, 30%);
+}
+.btn-4:hover {
+  background-color: #1baa80;
+  border-color: #1baa80;
+}
